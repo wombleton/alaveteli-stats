@@ -9,9 +9,10 @@ Usage
     var stats = require('alaveteli-stats');
 
     stats.parse({
-      site: 'https://fyi.org.nz',
-      from: 2008-01-01
-      to: 2014-10-01
+      site: 'https://fyi.org.nz', // alaveteli site
+      from: 2008-01-01, // from date — optional
+      to: 2014-10-01, // to date - optional
+      workers: 1 // how many parallel workers to run; defaults to 1
     }, function(err, data) {
       /**
        where data is an array of the following form
